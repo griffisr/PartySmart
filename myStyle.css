@@ -1,0 +1,53 @@
+body {
+    background-image: url("party_background.jpeg");
+    background-repeat: repeat;
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+  height: 600px;
+}
+.checkInLabel{
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.checkInForm {
+  position: absolute;
+  top: 41%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.counterButton {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.counterLabel {
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ff0000;
+
+}
+
+.checkOutLabel {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.checkOutForm {
+  position: absolute;
+  top: 71%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
