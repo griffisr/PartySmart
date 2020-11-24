@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Initialize Language -->
+<html lang="en-US">
+
+
+<head>
+  <meta charset="utf-8">
+  <title>Party Smart</title>
+  <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-database.js"></script>
+  <link rel="stylesheet" type="text/css" href="myStyle.css">
+</head>
+
+
+
+<body>
+
+<div class="container">
+  <!--Adds logo to top middle of the page -->
+  <image src = "party_smart.png" width="423" height="161" >
+
+  <!--Makes a semi-see-through box in the middle of the page -->
+  <!--<img src="white.png" alt="oof" width="1000" height="500"> -->
+
+  <!--Check In Label -->
+  <div class="checkInLabel">
+  <img src="Check_In.png" alt="Check In" width="235" height="55"> </div>
+
+
+  <!--Form for adding-->
+  <div class="checkInForm">
+  <form action="" onsubmit="checkIn">
+    Enter name: <input type="text" name="UsersName" id="UsersName" required>
+    <input type="submit" value="Submit" onClick="checkIn()">
+  </form>
+  </div>
+
+  <!--Counter Button-->
+  <div class="counterButton">
+  <p><button onclick="clickCounter()" type="button">Click me!</button></p>
+  </div>
+
+  <!--Counter Label-->
+  <div class="counterLabel" id="result"></div>
+
+  <!--Check Out Label -->
+  <div class="checkOutLabel">
+  <img src="Check_Out.png" alt="Check Out" width="235" height="65"> </div>
+
+
+  <!--Form for removing-->
+  <div class="checkOutForm">
+  <form action="" onsubmit="checkOut">
+    Enter name: <input type="text" name="UsersName" id="LeavingUsersName" required>
+  	<input type="submit" value="Submit" onClick="checkOut()" >
+  </form>
+  </div>
+
+</div>
+
+  <script src="List.js"></script>
+  <script srv="read_text_file.js"></script>
+</body>
+</html>
