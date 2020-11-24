@@ -15,6 +15,7 @@ var database = firebase.database();
 
 
 //Initialize List
+//Adding a file upload to submit custom lists
 var guestList = [
   "Aaron Blackerby",
 "Abbey Dombrowski",
@@ -481,7 +482,6 @@ function checkIn() {
     alert(name + " has been checked in.")
     clickCounter()
     inParty.push(name);
-    alert(inParty[0])
     console.log(inParty);
 	}
 	else
